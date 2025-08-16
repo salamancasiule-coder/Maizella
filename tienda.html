@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda - Maizella</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tienda.css">
+    <link rel="icon" type="image/jpg" href="img/Maizella_logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="img/Maizella_logo.jpg" alt="Logo de Maizella">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html#inicio">Inicio</a></li>
+                <li><a href="index.html#productos">Productos</a></li>
+                <li><a href="index.html#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="index.html#recetas">Recetas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tienda-hero" class="hero-section" style="background-image: url('img/main_image.png'); height: 60vh;">
+            <div class="hero-content">
+                <h1>Nuestra Tienda</h1>
+                <p>Elige la auténtica tradición del maíz mexicano.</p>
+            </div>
+        </section>
+
+        <section class="content-section" id="tienda">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="img/producto_1.png" alt="Masa de Maíz Tradicional">
+                    <div class="product-info">
+                        <h3>Masa de Maíz Tradicional</h3>
+                        <p>Bolsa de 1 kg.</p>
+                        <p class="price">$10.00 USD</p>
+                        <button class="add-to-cart-btn" data-id="1">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/producto_2_azul.png" alt="Masa de Maíz Azul">
+                    <div class="product-info">
+                        <h3>Masa de Maíz Azul</h3>
+                        <p>Bolsa de 1 kg.</p>
+                        <p class="price">$12.00 USD</p>
+                        <button class="add-to-cart-btn" data-id="2">Agregar al carrito</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="img/producto_restaurantes.png" alt="Masa para Restaurantes">
+                    <div class="product-info">
+                        <h3>Masa para Restaurantes</h3>
+                        <p>Cilindro de 10 kg.</p>
+                        <p class="price">$45.00 USD</p>
+                        <button class="add-to-cart-btn" data-id="3">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div id="cart-icon-container">
+            <div id="cart-icon">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <span id="cart-count">0</span>
+            </div>
+            <div id="cart-dropdown">
+                <h3 class="section-title">Tu Carrito</h3>
+                <div id="cart-items">
+                    <p>El carrito está vacío.</p>
+                </div>
+                <div class="cart-summary">
+                    <p class="total">Total: <span id="cart-total">$0.00 MXN</span></p>
+                    <a href="pago.html" class="cta-button">Proceder al Pago</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Maizella. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/pulse/maizella-llevando-la-esencia-del-ma%25C3%25ADz-mexicano-al-mundo-mai-zella-ajbne" target="_blank" aria-label="LinkedIn de Maizella"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@maizella04" target="_blank" aria-label="TikTok de Maizella"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.facebook.com/share/1Ao9snpLKo/" target="_blank" aria-label="Facebook de Maizella"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/maizella2/profilecard/?igsh=NmhwZ3h5ZHJtOTc4" target="_blank" aria-label="Instagram de Maizella"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/tienda.js"></script>
+</body>
+</html>

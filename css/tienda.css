@@ -1,0 +1,126 @@
+/* Estilos específicos para el botón "Agregar al carrito" */
+.add-to-cart-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--bg-light);
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #d6a927;
+}
+
+/* Estilos para el carrito flotante */
+#cart-icon-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+#cart-icon {
+    position: relative;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--bg-light);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+#cart-icon:hover {
+    transform: scale(1.1);
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#cart-dropdown {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 1.5rem;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#cart-dropdown.visible {
+    display: flex;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-info {
+    flex-grow: 1;
+}
+
+.cart-item-quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-item-quantity-controls button {
+    background: none;
+    border: 1px solid #ccc;
+    color: var(--text-dark);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.2rem 0.6rem;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.cart-item-quantity-controls button:hover {
+    background-color: #eee;
+}
+
+.cart-summary {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--primary-color);
+    text-align: right;
+}
+
+.cart-summary .total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--text-dark);
+}
